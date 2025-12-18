@@ -2,16 +2,16 @@ export type ScheduleItem = {
     id: string;
     date: string;
     time: string;
-    course: 'North Course' | 'South Course';
+    notes: string;
     assignment: 'Forecaddie' | 'Single Bag' | 'Double Bag';
   };
-  
+
   export const scheduleData: ScheduleItem[] = [
-    { id: '1', date: '2024-08-05', time: '7:30 AM', course: 'North Course', assignment: 'Forecaddie' },
-    { id: '2', date: '2024-08-06', time: '8:00 AM', course: 'South Course', assignment: 'Single Bag' },
-    { id: '3', date: '2024-08-08', time: '9:15 AM', course: 'North Course', assignment: 'Double Bag' },
-    { id: '4', date: '2024-08-09', time: '7:45 AM', course: 'South Course', assignment: 'Forecaddie' },
-    { id: '5', date: '2024-08-10', time: '1:00 PM', course: 'North Course', assignment: 'Single Bag' },
+    { id: '1', date: '2024-08-05', time: '7:30 AM', notes: 'North Course', assignment: 'Forecaddie' },
+    { id: '2', date: '2024-08-06', time: '8:00 AM', notes: 'South Course', assignment: 'Single Bag' },
+    { id: '3', date: '2024-08-08', time: '9:15 AM', notes: 'North Course', assignment: 'Double Bag' },
+    { id: '4', date: '2024-08-09', time: '7:45 AM', notes: 'South Course', assignment: 'Forecaddie' },
+    { id: '5', date: '2024-08-10', time: '1:00 PM', notes: 'North Course', assignment: 'Single Bag' },
   ];
   
   export type Announcement = {

@@ -33,7 +33,7 @@ export function ScheduleView() {
               <TableRow>
                 <TableHead className="w-[150px]">Date</TableHead>
                 <TableHead className="w-[120px]">Time</TableHead>
-                <TableHead>Course</TableHead>
+                <TableHead>Notes</TableHead>
                 <TableHead className="text-right">Assignment</TableHead>
               </TableRow>
             </TableHeader>
@@ -45,7 +45,7 @@ export function ScheduleView() {
                       {format(new Date(item.date), "EEE, MMM d")}
                     </TableCell>
                     <TableCell>{item.time}</TableCell>
-                    <TableCell>{item.course}</TableCell>
+                    <TableCell>{item.notes}</TableCell>
                     <TableCell className="text-right">
                       <Badge
                         variant={
